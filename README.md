@@ -38,3 +38,6 @@ cargo bootimage
 ```sh
 qemu-system-x86_64 -drive format=raw,file=target/x86_64-random-os/debug/bootimage-random_os.bin
 ```
+
+### References:
+[A Minimal Rust Kernel](https://os.phil-opp.com/minimal-rust-kernel) by Philipp Oppermann
