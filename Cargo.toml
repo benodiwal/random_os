@@ -5,9 +5,4 @@ authors = ["Sachin Beniwal <sachinbeniwal0101@gmail.com>"]
 edition = "2021"
 
 [dependencies]
-
-[profile.dev]
-panic = "abort"
-
-[profile.release]
-panic = "abort"
+bootloader = "0.9"
