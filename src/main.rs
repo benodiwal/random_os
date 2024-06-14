@@ -16,7 +16,7 @@ pub extern "C" fn _start() -> ! {
     for (i, &byte) in RANDOM.iter().enumerate() {
         unsafe {
             *vga_buffer.offset(i as isize * 2) = byte;
-            *vga_buffer.offset(i as isize * 2 + 1) = 0xb;
+            *vga_buffer.offset(i as isize * 2 + 1) = 0x4;
         }
     }
     loop {}
