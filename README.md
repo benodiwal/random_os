@@ -13,4 +13,28 @@ rustup override set nightly
 ```sh
 rustc --version
 ```
-`The version number should contain -nightly at the end`.
+The version number should contain -nightly at the end.
+
+- `llvm-tools-preview` for building the `bootloader`
+
+```sh
+rustup component add llvm-tools-preview
+```
+- `Install BootImage`
+
+```sh
+cargo install bootimage
+```
+
+
+## How to Build:
+
+```sh
+cargo bootimage
+```
+
+## Booting in QEMU
+
+```sh
+qemu-system-x86_64 -drive format=raw,file=target/x86_64-random-os/debug/bootimage-random_os.bin
+```
