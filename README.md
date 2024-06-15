@@ -36,7 +36,7 @@ cargo bootimage
 ## Booting in QEMU
 
 ```sh
-qemu-system-x86_64 -drive format=raw,file=target/x86_64-random-os/debug/bootimage-random_os.bin
+qemu-system-x86_64 -drive format=raw,file=target/x86_64-random-os/debug/bootimage-random-os.bin
 ```
 
 ### References:
